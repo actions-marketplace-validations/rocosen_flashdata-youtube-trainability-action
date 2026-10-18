@@ -1,0 +1,29 @@
+{
+  "source": "youtube_trainability",
+  "name": "YouTube License Metadata",
+  "sample": {
+    "video_id": "dQw4w9WgXcQ"
+  },
+  "inputs": "video_id (11 characters)",
+  "outputs": "results[]: videoId and license-label indicator permitted, with available kind/etag; usage.credits",
+  "limits": "permitted is a license-label signal, not legal training permission or creator third-party training settings.",
+  "outputExample": {
+    "source": "youtube_trainability",
+    "status": "done",
+    "results": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "kind": "youtube#videoTrainability",
+        "etag": "dQw4w9WgXcQ",
+        "permitted": [
+          "none"
+        ]
+      }
+    ],
+    "usage": {
+      "credits": 0.01
+    }
+  },
+  "repository": "flashdata-youtube-trainability-action",
+  "action_name": "YouTube License Labels - FlashData"
+}
