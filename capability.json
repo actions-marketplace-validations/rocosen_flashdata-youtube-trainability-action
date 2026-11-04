@@ -25,5 +25,5 @@
     }
   },
   "repository": "flashdata-youtube-trainability-action",
-  "action_name": "YouTube License Labels - FlashData"
+  "action_name": "YouTube License Checker"
 }
