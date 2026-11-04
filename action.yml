@@ -1,6 +1,6 @@
-name: YouTube License Labels - FlashData
-description: Save an auditable snapshot of a video’s Creative Commons
-  license-label signal for manual rights review.
+name: YouTube License Checker
+description: Check the Creative Commons license-label signal for a YouTube video
+  and export the API result as JSON and JSONL.
 author: FlashData
 branding:
   icon: search

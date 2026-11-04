@@ -1,4 +1,4 @@
-name: YouTube License Labels - FlashData
+name: YouTube License Checker
 on:
   workflow_dispatch: {}
 permissions:
@@ -7,15 +7,14 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Save an auditable snapshot of a video’s Creative Commons license-label
-          signal for manual rights review.
+      - name: YouTube License Checker
         id: data
-        uses: rocosen/flashdata-youtube-trainability-action@v0.1.0
+        uses: rocosen/flashdata-youtube-trainability-action@v0.1.1
         with:
           api-key: ${{ secrets.FLASHDATA_API_KEY }}
           video-id: dQw4w9WgXcQ
           options-json: "{}"
-      - name: Save data for the next pipeline stage
+      - name: Upload results
         uses: actions/upload-artifact@v4
         with:
           name: youtube-trainability
